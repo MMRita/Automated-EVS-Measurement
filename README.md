@@ -51,8 +51,8 @@ To use different models for SBD or Cross-Lingual Alignment and set different sim
 ### Sentence Boundary Detection Models
 
 - `punkt.py`: [NLTK's Punkt tokenizer](https://www.nltk.org/api/nltk.tokenize.html) (Additional dependency: nltk)
-- `spacy_sbd.py`: [Spacy](https://spacy.io/) (Additional dependencies: spacy)
-- `stanza_sbd.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
+- `spacy.py`: [Spacy](https://spacy.io/) (Additional dependencies: spacy)
+- `stanza.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
 
 ### Cross-Lingual Alignment Models
 
