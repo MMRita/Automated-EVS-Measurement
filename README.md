@@ -60,7 +60,7 @@ To use different models for SBD or Cross-Lingual Alignment and set different sim
 - `mT5.py`: [mT5](https://github.com/google-research/multilingual-t5) (Additional dependencies: transformers)
 - `SBERT.py`: [SBERT](https://www.sbert.net/) (default) (Additional dependency: sentence-transformers)
 - `USE.py`: [Universal Sentence Encoder](https://tfhub.dev/google/collections/universal-sentence-encoder/) (Additional dependencies: tensorflow, tensorflow-hub, tensorflow-text)
-- `XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/transformers/model_doc/xlmroberta/) (Additional dependency: transformers)
+- `XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/docs/transformers/model_doc/xlm-roberta) (Additional dependency: transformers)
 
 You can modify the respective scripts according to your needs and run them independently.
 
