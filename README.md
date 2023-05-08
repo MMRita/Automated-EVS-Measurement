@@ -20,14 +20,35 @@ pip install -r requirements.txt
 ### Using Default Models
 
 1. Clone the repository and install the dependencies.
-2. Run the `main.py` script with the language abbreviation:
+2. 
+3. Run the `main.py` script with the language abbreviation:
 
 ```bash
 python main.py <language>
+```
 
 ### Customizing the Pipeline
 
-To use different models for SBD or Cross-Lingual Alignment, please refer to the individual scripts provided for each model:
+To use different models for SBD or Cross-Lingual Alignment, please refer to the individual scripts provided for each model. You can find their supportting languages and processing models in their official sites:
+
+#### Sentence Boundary Detection Models
+
+- `punkt.py`: [NLTK's Punkt tokenizer](https://www.nltk.org/api/nltk.tokenize.html) (Additional dependency: nltk)
+- `spacy_sbd.py`: [Spacy](https://spacy.io/) (Additional dependencies: spacy, spacy-langdetect,)
+- `stanza_sbd.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
+
+#### Cross-Lingual Alignment Models
+fastdtw, tensorflow
+- `LASER.py`: [LASER](https://github.com/facebookresearch/LASER) (Additional dependency: laserembeddings)
+- `mT5.py`: [mT5](https://github.com/google-research/multilingual-t5) (Additional dependencies: transformers)
+- `SBERT.py`: [SBERT](https://www.sbert.net/) (default) (Additional dependency: sentence-transformers)
+- `USE.py`: [Universal Sentence Encoder](https://tfhub.dev/google/collections/universal-sentence-encoder/) (Additional dependencies: tensorflow, tensorflow-hub, tensorflow-text)
+- `XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/transformers/model_doc/xlmroberta.html) (Additional dependency: transformers)
+
+You can modify the respective scripts according to your needs and run them independently.
+
+
+
 
 #### Sentence Boundary Detection Models
 
