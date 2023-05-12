@@ -88,9 +88,9 @@ Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and 
 You can use the following command line to run one of the five models:
 
 ```bash
-python <script_name.py> <source_file.csv> <target_file.csv>
+python <script_name.py> <source_file.csv> <target_file.csv> <source_language> <target_language> <similarity_threshold>
 ```
-Replace `<script_name.py>` with the name of the script you choose, `<source_file.csv>` with the source language file path, and `<target_file.csv>` with the target language file path generated in the previous step.
+Replace `<script_name.py>` with the name of the script you choose, `<source_file.csv>` with the source language file path and `<target_file.csv>` with the target language file path generated in the previous step. Indicate the respective language codes in `<source_language>` and `<target_language>`. Set your own `<similarity_threshold>` between 0 to 1.
 
 ## Performance Evaluation
 
