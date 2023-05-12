@@ -94,7 +94,7 @@ Replace `<script_name.py>` with the name of the script you choose, `<source_file
 
 ## Performance Evaluation
 
-The robustness and performance of the Automated-EVS-Measurement pipeline have been evaluated in our research on a comprehensive 20-hour English-to-Portuguese SI corpus, encompassing 57 unique audio pairs. Below, we present key findings and figures illustrating the results.
+The robustness and performance of the Automated-EVS-Measurement pipeline have been evaluated in our research on a comprehensive 20-hour English-to-Portuguese SI corpus, encompassing 57 unique audio pairs. In the default combination of models, the error value of the mean EVS across the entire corpus is less than 0.1 seconds. Below, we present key findings and figures illustrating the results.
 
 <p align="center">
   <img src="images/violin.png" alt="violin plot">
