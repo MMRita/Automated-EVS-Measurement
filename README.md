@@ -118,8 +118,22 @@ If you would like to contribute to this project, please submit a pull request wi
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project uses models from the following sources, each with their respective licenses:
 
+- WhisperX: BSD-4 License
+- NLTK's Punkt tokenizer: Apache License 2.0
+- SpaCy: MIT License
+- Stanza: Apache License 2.0
+- SBERT: Apache License 2.0
+- LASER: BSD License
+- Universal Sentence Encoder: Apache License 2.0
+- mT5: Apache License 2.0
+- XLM-Roberta: Apache License 2.0
+
+The code and other content in this project, including the incorporation of the above models, are licensed under the MIT License.
 
 ## Contact
 For questions or comments, please contact p2111921@mpu.edu.mo. Hope this helps! Let me know if you have any other questions.
+
+## Citation
+If you use this in your research, please cite the paper:
