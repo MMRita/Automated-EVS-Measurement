@@ -64,26 +64,35 @@ To use different models for SBD or Cross-Lingual Alignment and set different sim
 
 ### Sentence Boundary Detection Models
 
-- `punkt.py`: [NLTK's Punkt tokenizer](https://www.nltk.org/api/nltk.tokenize.html) (Additional dependency: nltk)
-- `spacy.py`: [Spacy](https://spacy.io/) (Additional dependencies: spacy)
-- `stanza.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
+- `SBD_punkt.py`: [NLTK's Punkt tokenizer](https://www.nltk.org/api/nltk.tokenize.html) (Additional dependency: nltk)
+- `SBD_spaCy.py`: [SpaCy](https://spacy.io/) (Additional dependencies: spacy)
+- `SBD_stanza.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
 
-You can use the following command line to run the three codes:
+You can use the following command line to run one of the three codes:
 
 ```bash
 python `<script_name.py>` `<en>` `<path_to_your_file.word.srt>`
 ```
-Replace `<script_name.py>` with the name of the scripts provided above, `<en>` with the language code, and `<path_to_your_file.word.srt>` with the path to the ".word.srt" file you want to process.
+Replace `<script_name.py>` with the name of the script you choose, `<en>` with the language code, and `<path_to_your_file.word.srt>` with the path to the ".word.srt" file you want to process.
+
+Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and install the required language models, please refer to the official site and choose the language models at the `accuracy` pipeline. 
 
 ### Cross-Lingual Alignment Models
 
-- `LASER.py`: [LASER](https://github.com/facebookresearch/LASER) (Additional dependency: laserembeddings)
-- `SBERT.py`: [SBERT](https://www.sbert.net/) (Additional dependency: sentence-transformers)
-- 
-- `USE.py`: [Universal Sentence Encoder](https://tfhub.dev/google/collections/universal-sentence-encoder/) (default) (Additional dependencies: tensorflow, tensorflow-hub, tensorflow-text)
-- `XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/docs/transformers/model_doc/xlm-roberta) (Additional dependency: transformers)
+- `A_SBERT.py`: [SBERT](https://www.sbert.net/) (Additional dependency: sentence-transformers)
+- `A_LASER.py`: [LASER](https://github.com/facebookresearch/LASER) (Additional dependency: laserembeddings)
+- `A_USE.py`: [Universal Sentence Encoder](https://tfhub.dev/google/collections/universal-sentence-encoder/) (default) (Additional dependencies: tensorflow, tensorflow-hub, tensorflow-text)
+- `A_mT5`:[mT5](https://huggingface.co/google/mt5-small) (Additional dependency: transformers)
+- `A_XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/docs/transformers/model_doc/xlm-roberta) (Additional dependency: transformers)
 
-You can modify the respective scripts according to your needs and run them independently.
+You can use the following command line to run one of the five codes:
+
+```bash
+python `<script_name.py>` `<path_to_your_file.word.srt>`
+```
+Replace `<script_name.py>` with the name of the script you choose, `<en>` with the language code, and `<path_to_your_file.word.srt>` with the path to the ".word.srt" file you want to process.
+
+Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and install the required language models, please refer to the official site and choose the language models at the `accuracy` pipeline. 
 
 ## Performance Evaluation
 
