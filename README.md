@@ -10,7 +10,7 @@ This project aims to automate the measurement of Ear-Voice-Span (EVS) in Interpr
 
 ## Languages supported
 
-For now, ten languages are supported with the following language code:
+Ten languages are supported with the following language code:
 
 `en` → English  
 `fr` → French  
@@ -54,9 +54,9 @@ Replace `<source_language>` and `<target_language>` with the respective language
 
 After running the code, three files will be generated:
 
-- source_language_sentences.txt (for SBD process)
-- target_language_sentences.txt (for SBD process)
-- cross_lingual_alignment.txt (for cross-lingual alignment process and EVS extraction)
+- source_language_sentences.csv (for SBD process)
+- target_language_sentences.csv (for SBD process)
+- cross_lingual_alignment.csv (for cross-lingual alignment process and EVS extraction)
 
 ## Customizing the Pipeline
 
