@@ -71,7 +71,7 @@ To use different models for SBD or Cross-Lingual Alignment and set different sim
 You can use the following command line to run one of the three models:
 
 ```bash
-python `<script_name.py>` `<en>` `<path_to_your_file.word.srt>`
+python <script_name.py> <en> <path_to_your_file.word.srt>
 ```
 Replace `<script_name.py>` with the name of the script you choose, `<en>` with the language code, and `<path_to_your_file.word.srt>` with the path to the ".word.srt" file you want to process.
 
@@ -88,7 +88,7 @@ Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and 
 You can use the following command line to run one of the five models:
 
 ```bash
-python `<script_name.py>` `<source_file.csv>` `<target_file.csv>`
+python <script_name.py> <source_file.csv> <target_file.csv>
 ```
 Replace `<script_name.py>` with the name of the script you choose, `<source_file.csv>` with the source language file path, and `<target_file.csv>` with the target language file path generated in the previous step.
 
