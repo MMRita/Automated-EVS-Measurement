@@ -68,7 +68,7 @@ To use different models for SBD or Cross-Lingual Alignment and set different sim
 - `SBD_spaCy.py`: [SpaCy](https://spacy.io/) (Additional dependencies: spacy)
 - `SBD_stanza.py`: [Stanza](https://stanfordnlp.github.io/stanza/) (default) (Additional dependency: stanza)
 
-You can use the following command line to run one of the three codes:
+You can use the following command line to run one of the three models:
 
 ```bash
 python `<script_name.py>` `<en>` `<path_to_your_file.word.srt>`
@@ -85,14 +85,12 @@ Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and 
 - `A_mT5`:[mT5](https://huggingface.co/google/mt5-small) (Additional dependency: transformers)
 - `A_XLM-Roberta.py`: [XLM-Roberta](https://huggingface.co/docs/transformers/model_doc/xlm-roberta) (Additional dependency: transformers)
 
-You can use the following command line to run one of the five codes:
+You can use the following command line to run one of the five models:
 
 ```bash
-python `<script_name.py>` `<path_to_your_file.word.srt>`
+python `<script_name.py>` `<source_file.csv>` `<target_file.csv>`
 ```
-Replace `<script_name.py>` with the name of the script you choose, `<en>` with the language code, and `<path_to_your_file.word.srt>` with the path to the ".word.srt" file you want to process.
-
-Note: Before running the script `SBD_SpaCy.py`, it is necessary to download and install the required language models, please refer to the official site and choose the language models at the `accuracy` pipeline. 
+Replace `<script_name.py>` with the name of the script you choose, `<source_file.csv>` with the source language file path, and `<target_file.csv>` with the target language file path generated in the previous step.
 
 ## Performance Evaluation
 
