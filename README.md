@@ -4,7 +4,7 @@ This project aims to automate the measurement of Ear-Voice-Span (EVS) in Interpr
 
 ## Pipeline Overview
 
-1. **ASR**: The [WhisperX](https://github.com/m-bain/whisperX) ASR is used to convert audio files into text with word-level timestamps.
+1. **ASR**: The [WhisperX](https://github.com/m-bain/whisperX) v.2 ASR is used to convert audio files into text with word-level timestamps.
 2. **SBD**: The ASR output is processed using various SBD models (Stanza by default).
 3. **Cross-Lingual Alignment**: Sentences from two languages are aligned (using Universal Sentence Encoder (USE) with a similarity threshold of 0.5 by default), and EVS is extracted.
 
