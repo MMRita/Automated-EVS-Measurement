@@ -4,7 +4,7 @@ This project aims to automate the measurement of Ear-Voice-Span (EVS) in Interpr
 
 ## Pipeline Overview
 
-1. **ASR**: The [WhisperX](https://github.com/m-bain/whisperX) v.2 ASR is used to convert audio files into text with word-level timestamps.
+1. **ASR**: The current version of our pipeline utilizes [WhisperX](https://github.com/m-bain/whisperX) v.2 ASR to convert audio files into text with word-level timestamps. Please note that WhisperX v.2, while effective, may have slower transcription speeds. We are actively working on testing and integrating WhisperX v.3, which promises faster transcription capabilities. Stay tuned for updates on this enhancement in future releases.
 2. **SBD**: The ASR output is processed using various SBD models (Stanza by default).
 3. **Cross-Lingual Alignment**: Sentences from two languages are aligned (using Universal Sentence Encoder (USE) with a similarity threshold of 0.5 by default), and EVS is extracted.
 
@@ -26,9 +26,10 @@ This pipeline supports ten languages, each identified by their respective langua
 
 ## Getting Started
 
-To get started, clone the repository and install the necessary dependencies:
-```
-git clone https://github.com/MMRita/automated-evs-measurement.git
+1. **ASR Setup**: To use the ASR functionality with WhisperX, first set up WhisperX v.2 by visiting [WhisperX v.2 GitHub Repository](https://github.com/m-bain/whisperX). Follow the instructions provided there to ensure proper configuration.
+2. **Cloning the Repository**: Once WhisperX v.2 is set up, clone this repository to get started with the Automated EVS Measurement tool:
+```bash
+   git clone https://github.com/MMRita/automated-evs-measurement.git
 pip install -r requirements.txt
 ```
 
