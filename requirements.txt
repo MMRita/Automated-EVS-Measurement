@@ -1,7 +1,3 @@
-# ASR
-git+https://github.com/m-bain/whisperx.git
-ffmpeg
-
 # Sentence boundary detection
 stanza==1.3.0
 
